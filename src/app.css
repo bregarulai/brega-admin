@@ -1,0 +1,48 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-family: 'Source Sans Pro',
+    sans-serif;
+    font-size: 50%;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 1.6rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.icon {
+    font-size: 2rem !important;
+}
+
+ @media screen and (min-width: 900px) {
+     html {
+         font-size: 56.25%;
+     }
+ }
+
+ @media screen and (min-width: 1200px) {
+     html {
+         font-size: 62.5%;
+     }
+ }

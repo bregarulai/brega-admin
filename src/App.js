@@ -1,9 +1,10 @@
-
+import "./app.css"
+import TopBar from "./components/TopBar";
 
 function App() {
   return (
     <div>
-     admin board
+     <TopBar />
     </div>
   );
 }
