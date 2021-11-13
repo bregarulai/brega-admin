@@ -3,6 +3,8 @@ import Chart from "../../components/Chart";
 import FeaturedInfo from "../../components/FeaturedInfo";
 import "./home.css";
 import { userData } from "../../dummyData";
+import WidgetSm from "../../components/WidgetSm";
+import WidgetLg from "../../components/WidgetLg";
 
 const Home = () => {
   return (
@@ -14,6 +16,10 @@ const Home = () => {
         dataKey="Active User"
         grid
       />
+      <div className="homeWidgets">
+        <WidgetSm />
+        <WidgetLg />
+      </div>
     </div>
   );
 };
