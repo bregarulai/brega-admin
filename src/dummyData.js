@@ -1,4 +1,5 @@
 import { DeleteOutline } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 export const userData = [
   {
@@ -84,7 +85,9 @@ export const userColumns = [
     renderCell: (params) => {
       return (
         <div className="userListAction">
-          <button className="userListActionBtn">Edit</button>
+          <Link to={`/user/${params.row.id}`}>
+            <button className="userListActionBtn">Edit</button>
+          </Link>
           <DeleteOutline className="userListActionIcon" />
         </div>
       );
