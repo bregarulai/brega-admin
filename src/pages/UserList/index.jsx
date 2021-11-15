@@ -2,7 +2,7 @@ import { DataGrid } from "@mui/x-data-grid";
 import React from "react";
 
 import "./userList.css";
-import { rows, columns } from "../../dummyData";
+import { userRows, userColumns } from "../../dummyData";
 
 const UserList = () => {
   return (
@@ -10,8 +10,8 @@ const UserList = () => {
       <DataGrid
         className="userListDataGrid"
         disableSelectionOnClick
-        rows={rows}
-        columns={columns}
+        rows={userRows}
+        columns={userColumns}
         pageSize={7}
         rowsPerPageOptions={[5]}
         checkboxSelection

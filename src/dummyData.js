@@ -51,7 +51,7 @@ export const userData = [
   },
 ];
 
-export const columns = [
+export const userColumns = [
   { field: "id", headerName: "ID", width: 70 },
   {
     field: "user",
@@ -92,7 +92,7 @@ export const columns = [
   },
 ];
 
-export const rows = [
+export const userRows = [
   {
     id: 1,
     username: "sam bowie",
