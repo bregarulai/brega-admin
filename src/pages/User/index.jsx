@@ -9,13 +9,16 @@ import {
   PhoneAndroid,
   Publish,
 } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 const User = () => {
   return (
     <div className="user">
       <div className="userTitleContainer">
         <h1 className="userTitle">Edit User</h1>
-        <button className="userAddBtn">Create</button>
+        <Link to="/newuser">
+          <button className="userAddBtn">Create</button>
+        </Link>
       </div>
       <div className="userContainer">
         <div className="userShow">

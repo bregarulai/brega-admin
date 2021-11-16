@@ -124,6 +124,10 @@
     height: 3rem;
 }
 
+.userUpdateInput:focus {
+    outline: none;
+}
+
 .userUpdateRight {
     display: flex;
     flex-direction: column;
