@@ -4,6 +4,7 @@ import "./app.css";
 import SideBar from "./components/Sidebar";
 import TopBar from "./components/TopBar";
 import Home from "./pages/Home";
+import User from "./pages/User";
 import UserList from "./pages/UserList";
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/users" element={<UserList />} />
+          <Route path="/user/:userId" element={<User />} />
         </Routes>
       </div>
     </Router>
