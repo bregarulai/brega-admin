@@ -1,0 +1,47 @@
+.productListPage {
+     flex: 4;
+     padding: 2rem;
+}
+
+.productListDataGrid {
+    font-size: 1.6rem !important;
+}
+
+.productListProduct {
+    display: flex;
+    align-items: center;
+}
+
+.productListProductImg {
+    width: 3.2rem;
+    height: 3.2rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.productListAction {
+    display: flex;
+    align-items: center;
+}
+
+.productListActionBtn {
+    border: none;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    background: #3bb077;
+    color: white;
+    cursor: pointer;
+}
+
+.productListActionBtn:focus {
+    outline: none;
+}
+
+
+.productListActionIcon.css-i4bv87-MuiSvgIcon-root {
+    font-size: 3rem !important;
+    color: tomato;
+    margin-left: 2rem;
+    cursor: pointer;
+}
