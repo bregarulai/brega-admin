@@ -12,6 +12,7 @@ import {
   WorkOutline,
 } from "@mui/icons-material";
 import React from "react";
+import { Link } from "react-router-dom";
 import "./sidebar.css";
 
 const SideBar = () => {
@@ -38,14 +39,18 @@ const SideBar = () => {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Quick Menu</h3>
           <ul className="sidebarList">
-            <li className="sidebarListItem">
-              <PermIdentity className="sidebarIcon" />
-              <span className="sidebarListItemText ">Users</span>
-            </li>
-            <li className="sidebarListItem">
-              <Storefront className="sidebarIcon " />
-              <span className="sidebarListItemText">Products</span>
-            </li>
+            <Link to="/users">
+              <li className="sidebarListItem">
+                <PermIdentity className="sidebarIcon" />
+                <span className="sidebarListItemText ">Users</span>
+              </li>
+            </Link>
+            <Link to="/products">
+              <li className="sidebarListItem">
+                <Storefront className="sidebarIcon " />
+                <span className="sidebarListItemText">Products</span>
+              </li>
+            </Link>
             <li className="sidebarListItem">
               <AttachMoney className="sidebarIcon " />
               <span className="sidebarListItemText">Transactions</span>

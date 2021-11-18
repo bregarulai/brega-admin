@@ -53,36 +53,42 @@ const NewUser = () => {
         <div className="newUserFormItem">
           <label className="newUserFormLabel">Gender</label>
           <div className="newUserGender">
-            <input
-              type="radio"
-              name="gender"
-              id="male"
-              value="male"
-              className="newUserFormInput newUserFormInputRadio"
-            />
-            <label className="newUserFormLabel-radio" for="male">
-              Male
-            </label>
-            <input
-              type="radio"
-              name="gender"
-              id="female"
-              value="female"
-              className="newUserFormInput newUserFormInputRadio"
-            />
-            <label className="newUserFormLabel-radio" for="female">
-              Female
-            </label>
-            <input
-              type="radio"
-              name="gender"
-              id="other"
-              value="other"
-              className="newUserFormInput newUserFormInputRadio"
-            />
-            <label className="newUserFormLabel-radio" for="other">
-              Other
-            </label>
+            <div className="newUserGenderContainer">
+              <input
+                type="radio"
+                name="gender"
+                id="male"
+                value="male"
+                className=" newUserFormInputRadio"
+              />
+              <label className="newUserFormLabel-radio" for="male">
+                Male
+              </label>
+            </div>
+            <div className="newUserGenderContainer">
+              <input
+                type="radio"
+                name="gender"
+                id="female"
+                value="female"
+                className=" newUserFormInputRadio"
+              />
+              <label className="newUserFormLabel-radio" for="female">
+                Female
+              </label>
+            </div>
+            <div className="newUserGenderContainer">
+              <input
+                type="radio"
+                name="gender"
+                id="other"
+                value="other"
+                className=" newUserFormInputRadio"
+              />
+              <label className="newUserFormLabel-radio" for="other">
+                Other
+              </label>
+            </div>
           </div>
         </div>
         <div className="newUserFormItem">
@@ -95,6 +101,9 @@ const NewUser = () => {
               No
             </option>
           </select>
+        </div>
+        <div className="newUserBtnContainer">
+          <button className="newUserBtn">Create</button>
         </div>
       </form>
     </div>
