@@ -49,7 +49,7 @@ const ProductListPage = () => {
       width: 150,
       renderCell: (params) => {
         return (
-          <div className="userListAction">
+          <div className="productListAction">
             <Link to={`/product/${params.row.id}`}>
               <button className="productListActionBtn">Edit</button>
             </Link>
